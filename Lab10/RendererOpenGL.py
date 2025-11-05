@@ -170,11 +170,11 @@ while isRunning:
 		rend.camera.Orbit(0, -30 * deltaTime)  # Bajar
 	
 	# Zoom con teclado
-	if keys[K_KP_PLUS] or keys[K_EQUALS]:  # Tecla + o =
-		rend.camera.Zoom(-2 * deltaTime)  # Acercar
+	if keys[K_i]:  # Tecla I
+		rend.camera.Zoom(-2 * deltaTime)  # Acercar (Zoom In)
 	
-	if keys[K_KP_MINUS] or keys[K_MINUS]:  # Tecla -
-		rend.camera.Zoom(2 * deltaTime)  # Alejar
+	if keys[K_o]:  # Tecla O
+		rend.camera.Zoom(2 * deltaTime)  # Alejar (Zoom Out)
 
 	# Controles de LUZ (mantener los originales)
 	if keys[K_w]:
